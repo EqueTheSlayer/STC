@@ -11,7 +11,6 @@ router.get('/',async (req, res) => {
 })
 
 //Update counter
-
 router.put('/:id', async (req, res) => {
   const counter = await loadCounter();
   await counter.updateOne({
